@@ -42,7 +42,7 @@ const THEME_SWITCH_TEXT = {
 };
 
 const config: DocsThemeConfig = {
-  docsRepositoryBase: 'https://github.com/namnguyenthanhwork/nextra-personal-website-template',
+  docsRepositoryBase: 'https://github.com/namnguyenthanhwork/nextra-personal-website-template/tree/master',
   project: {
     link: 'https://github.com/namnguyenthanhwork/nextra-personal-website-template',
   },
