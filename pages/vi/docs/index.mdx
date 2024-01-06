@@ -1,0 +1,52 @@
+# Nextra
+
+**Nextra** là một framework được xây dựng trên nền tảng của Next.js, cho phép bạn xây dựng các trang web tập trung vào nội dung. Nó có tất cả các tính năng tuyệt vời từ Next.js để tạo nội dung dựa trên Markdown một cách dễ dàng.
+
+## Bắt đầu [#bat-dau]
+
+Dự án này kết hợp cả hai chủ đề **[Documentation Theme](https://nextra.site/docs/docs-theme/start)** và **[Blog Theme](https://nextra.site/docs/blog-theme)**. Dự án sử dụng phiên bản V3 Alpha Nextra với nhiều tính năng như:
+
+- Hỗ trợ `i18n` tốt hơn.
+- MDX 3
+- Tệp `_meta.{js,jsx,ts,tsx}` mới với hỗ trợ JSX
+- Table of Contents (TOC) mạnh mẽ hơn
+- Kích thước Bundle tốt hơn
+- ...
+
+Xem chi tiết tại: [Nextra 3 – Your Favourite MDX Framework, Now on 🧪 Steroids](https://the-guild.dev/blog/nextra-3)
+
+## Nextra FAQ
+
+FAQ Nextra tổng hợp các câu hỏi và câu trả lời về dự án. Nếu bạn có một câu hỏi mà không có trong đây, vui lòng [mở một cuộc thảo luận](https://github.com/shuding/nextra/discussions).
+
+export function FAQBox({ title, children }) {
+  return (
+    <details open className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4">
+      <summary>
+        <strong className="text-lg">{title}</strong>
+      </summary>
+      <div className="nx-p-2">{children}</div>
+    </details>
+  );
+}
+
+<FAQBox title="Tôi có thể sử dụng Nextra với app router Next.js không?">
+  Không, Nextra chỉ hoạt động với thư mục `/pages` trong thời điểm hiện tại. Hỗ trợ cho app router chưa được triển khai.
+  Tuy nhiên, bạn có thể sử dụng cả `/app` và `/pages` cùng một lúc - chỉ cần đặt tài liệu của bạn bên trong `/pages` và
+  các đường dẫn khác trong `/app`.
+</FAQBox>
+
+<FAQBox title="Tôi có thể sử dụng X với Nextra không?">
+  Câu trả lời là "có" đối với hầu hết mọi thứ. Vì Nextra chỉ là một plugin của Next.js, gần như mọi thứ có thể được thực hiện với React đều có thể được thực hiện với Nextra. Dưới đây là một số ví dụ và hướng dẫn:
+
+- [Sử dụng Tailwind CSS](https://nextra.site/docs/guide/advanced/tailwind-css)
+- [Sử dụng CSS và Sass tùy chỉnh](https://nextra.site/docs/guide/custom-css)
+- [Sử dụng phông chữ tùy chỉnh](https://nextjs.org/docs/basic-features/font-optimization)
+
+</FAQBox>
+
+<FAQBox title="Làm thế nào để thêm một thành phần mã hóa trực tiếp vào Nextra?">
+  Có các thư viện như [Sandpack](https://sandpack.codesandbox.io) và
+  [react-live](https://github.com/FormidableLabs/react-live) có thể giúp bạn thêm các thành phần mã hóa trực tiếp vào
+  MDX của bạn.
+</FAQBox>

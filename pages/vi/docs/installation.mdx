@@ -1,41 +1,42 @@
-# Nextra Personal Website Template 
+import { Callout, Cards, Steps } from 'nextra/components';
 
-Đây là template bao gồm gần như mọi thứ bạn cần để xây dựng một trang web cá nhân. Bạn có thể viết **tài liệu** và **blog**, có thanh điều hướng, thanh tìm kiếm, thanh trang, thanh TOC, và các thành phần tích hợp khác. Và đặc biệt có hỗ trợ đa ngôn ngữ (i18n) - đã cấu hình sẵn tiếng Việt và tiếng Anh. 
+# Cài đặt [#cai-dat]
 
-[**Xem Demo →**](https://nextra-personal-website-template.vercel.app)
+**Nextra Personal Website Template** là một template bao gồm gần như mọi thứ bạn cần để xây dựng một trang web cá nhân, bạn có thể viết **tài liệu** và **blog**. Nó bao gồm thanh điều hướng, thanh tìm kiếm, thanh trang, thanh TOC, và các thành phần tích hợp khác.
 
-## Công nghệ sử dụng
+## Bắt đầu [#bat-dau]
 
-- NextJS 14
-- Nextra v3 alpha
-- Tailwind CSS, Shadcn/ui, Headless UI...
-- MDX v3
-
-Xem thêm các tính năng mới của Nextra v3 [tại đây](https://the-guild.dev/blog/nextra-3)
-
-## Bắt đầu
-
-### Triển khai trên Vercel
+### Triển khai trên Vercel [#trien-khai-tren-vercel]
 
 Bạn có thể bắt đầu bằng cách tạo trang web Nextra của riêng bạn và triển khai lên Vercel bằng cách nhấp vào liên kết:
 
-[![](https://vercel.com/button)](href="https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fnamnguyenthanhwork%2Fnextra-personal-website-template&showOptionalTeamCreation=false")
+<a
+  className="mt-3 inline-flex"
+  target="_blank"
+  href="https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fnamnguyenthanhwork%2Fnextra-personal-website-template&showOptionalTeamCreation=false"
+>
+  ![](https://vercel.com/button)
+</a>
 
 Vercel sẽ sao chép [Nextra Personal Website Template](https://github.com/namnguyenthanhwork/nextra-personal-website-template) và triển khai trang web cho bạn. Khi hoàn thành, mọi commit trong repo sẽ được triển khai tự động.
 
-### Sao chép Repository
+### Sao chép Repository [#sao-chep-repos]
 
 Bạn cũng có thể sao chép [Repository này](https://github.com/namnguyenthanhwork/nextra-personal-website-template) một cách thủ công.
 
-### Cài đặt 
+## Bắt đầu một dự án mới [#bat-dau-du-an]
+
+<Steps>
+
+### Cài đặt [#cai-dat]
 
 Để tạo một trang Nextra Docs một cách thủ công, bạn phải cài đặt **Next.js**, **React**, **Nextra V3 alpha**, và **Nextra Docs Theme V3 alpha**. Trong thư mục dự án của bạn, chạy lệnh sau để cài đặt các phụ thuộc:
 
-```
+```sh npm2yarn
 npm i next react react-dom nextra@alpha nextra-theme-docs@alpha
 ```
 
-Nếu bạn đã cài đặt Next.js trong dự án của mình, bạn chỉ cần cài đặt `nextra` và `nextra-theme-docs`.
+<Callout>Nếu bạn đã cài đặt Next.js trong dự án của mình, bạn chỉ cần cài đặt `nextra` và `nextra-theme-docs`.</Callout>
 
 Thêm các tập lệnh sau vào `package.json`:
 
@@ -49,11 +50,11 @@ Thêm các tập lệnh sau vào `package.json`:
 
 Bạn có thể chạy project sử dụng npm `npm run dev`, chạy ở chế độ phát triển hoặc `npm run build && npm run start` cho chế độ production.
 
-### Thêm cấu hình Next.js 
+### Thêm cấu hình Next.js [#cau-hinh-nextjs]
 
 Tạo tệp `next.config.js` sau trong thư mục gốc của dự án:
 
-```
+```js filename="next.config.js"
 const withNextra = require('nextra')({
   theme: 'nextra-theme-docs',
   themeConfig: './theme.config.jsx',
@@ -67,11 +68,11 @@ module.exports = withNextra();
 
 Với cấu hình trên, Nextra có thể xử lý các tệp Markdown trong dự án Next.js của bạn, với chủ đề được chỉ định. Các cấu hình Nextra khác có thể được tìm thấy trong [Hướng Dẫn](https://nextra.site/docs/guide).
 
-### Tạo cấu hình Docs Theme
+### Tạo cấu hình Docs Theme [#tao-cau-hinh]
 
 Cuối cùng, tạo tệp `theme.config.jsx` tương ứng trong thư mục gốc của dự án. Điều này sẽ được sử dụng để cấu hình chủ đề Nextra Docs:
 
-```
+```jsx filename="theme.config.jsx"
 export default {
   logo: <span>Nextra Template</span>,
   project: {
@@ -81,9 +82,9 @@ export default {
 };
 ```
 
-Cấu hình chủ đề đầy đủ có thể được tìm thấy [tại đây](https://nextra.site/docs/docs-theme/theme-configuration).
+Cấu hình chủ đề đầy đủ có thể được tìm thấy [tại đây](/vi/docs/doc-theme/theme-configuration).
 
-### Sẵn sàng sử dụng 
+### Sẵn sàng sử dụng [#su-dung]
 
 Bây giờ, bạn có thể tạo trang MDX đầu tiên của mình tại `pages/index.mdx`:
 
@@ -94,3 +95,12 @@ Xin chào, thế giới!
 ```
 
 Và chạy lệnh `next` hoặc `next dev` được chỉ định trong `package.json` để bắt đầu phát triển dự án! 🎉
+
+</Steps>
+
+Tiếp theo, hãy kiểm tra phần tiếp theo để tìm hiểu về cách tổ chức cấu trúc tài liệu và cấu hình chủ đề trang web:
+
+<Cards>
+  <Cards.Card title="Cấu trúc Page" href="/vi/docs/doc-theme/page-configuration" />
+  <Cards.Card title="Cấu hình Theme" href="/vi/docs/doc-theme/theme-configuration" />
+</Cards>
