@@ -4,8 +4,8 @@ import { useRouter } from 'nextra/hooks';
 import { LocaleSwitch, useConfig, DocsThemeConfig, Link, ThemeSwitch } from 'nextra-theme-docs';
 
 const BANNER_TEXT = {
-  vi: '🎉 Nextra Personal Website Template v1.0.0 được phát hành',
-  en: '🎉 Nextra Personal Website Template v1.0.0 released',
+  vi: '🎉 Nextra Personal Website Template v1.1.0 được phát hành',
+  en: '🎉 Nextra Personal Website Template v1.1.0 released',
 };
 
 const TOC_TITLE_TEXT = {
