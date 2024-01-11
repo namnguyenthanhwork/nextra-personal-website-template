@@ -19,7 +19,7 @@ Xem thêm các tính năng mới của Nextra v3 [tại đây](https://the-guild
 
 Bạn có thể bắt đầu bằng cách tạo trang web Nextra của riêng bạn và triển khai lên Vercel bằng cách nhấp vào liên kết:
 
-[![](https://vercel.com/button)](href="https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fnamnguyenthanhwork%2Fnextra-personal-website-template&showOptionalTeamCreation=false")
+[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fnamnguyenthanhwork%2Fnextra-personal-website-template&showOptionalTeamCreation=false)
 
 Vercel sẽ sao chép [Nextra Personal Website Template](https://github.com/namnguyenthanhwork/nextra-personal-website-template) và triển khai trang web cho bạn. Khi hoàn thành, mọi commit trong repo sẽ được triển khai tự động.
 
