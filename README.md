@@ -1,4 +1,4 @@
-# Nextra Personal Website Template 
+# Nextra Personal Website Template
 
 This template includes almost everything you need to build a personal website. You can write **documents** and **blogs**, have navigation bar, search bar, page bar, TOC bar, and other integrated components. And especially with multi-language support (i18n) - pre-configured Vietnamese and English.
 
@@ -6,9 +6,9 @@ This template includes almost everything you need to build a personal website. Y
 
 ## Technology used
 
-- NextJS 14
-- Nextra v3 alpha
-- Tailwind CSS, Shadcn/ui, Headless UI...
+- NextJS 15
+- Nextra v3
+- Tailwind CSS, Shadcn/ui
 - MDX v3
 
 See more new features of Nextra v3 [here](https://the-guild.dev/blog/nextra-3)
@@ -27,11 +27,11 @@ Vercel will copy the [Nextra Personal Website Template](https://github.com/namng
 
 You can also clone [this repository](https://github.com/namnguyenthanhwork/nextra-personal-website-template) manually.
 
-### Installation 
+### Installation
 
 To manually create a Nextra Docs site, you must install **NextJS, React, Nextra V3 alpha and Nextra Docs Theme V3 alpha**. In your project directory, run the following command to install the dependencies:
 
-```
+```bash
 npm i next react react-dom nextra@alpha nextra-theme-docs@alpha
 ```
 
@@ -53,7 +53,7 @@ You can run the project using npm `npm run dev`, running in development mode or 
 
 Create the `next.config.js` following file in the project root directory:
 
-```
+```js
 const withNextra = require('nextra')({
   theme: 'nextra-theme-docs',
   themeConfig: './theme.config.jsx',
@@ -71,7 +71,7 @@ With the above configuration, Nextra can process Markdown files in your NextJS p
 
 Finally, create the `theme.config.jsx` corresponding file in the project root directory. This will be used to configure the Nextra Docs theme:
 
-```
+```bash
 export default {
   logo: <span>Nextra Template</span>,
   project: {
@@ -93,3 +93,13 @@ Hello world!
 ```
 
 And run the command `next` or `next dev` specified in `package.json` to start project development! 🎉
+
+## Buy me a coffee
+
+If you find this project helpful, you can buy me a coffee 🙏
+
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-Donate-FF813F.svg)](https://buymeacoffee.com/thanhnamnguyen)
+
+## Sponsors
+
+Support this project by becoming a sponsor. Your logo will show up here. [🙏 Become a sponsor via Buy me a coffee](https://buymeacoffee.com/thanhnamnguyen)
